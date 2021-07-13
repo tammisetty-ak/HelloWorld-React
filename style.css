@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(103, 82, 221);
+}
+.button{
+ background-color: rgb(182, 169, 169);
+ margin-right : 50dp;
+ size: 50dp;
+}
