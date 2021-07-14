@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css"
-import Button from "./Button"
 
 const Fun=()=>{
     return (
@@ -10,18 +9,10 @@ const Fun=()=>{
             <p><i>React. js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications</i></p>
             <p><i>React. js is Built using HTML,CSS, JavaScript</i></p>
             <p><i>Click here for more info</i></p>
-            <Button onClick={(e) => {
-      e.preventDefault();
-      window.location.href='https://www.w3schools.com/html/';
-      }} buttonname="HTML" />
-            <Button onClick={(e) => {
-      e.preventDefault();
-      window.location.href='https://www.w3schools.com/css/';
-      }}buttonname="CSS" />
-            <Button onClick={(e) => {
-      e.preventDefault();
-      window.location.href='https://www.w3schools.com/js/';
-      }}buttonname="JAVASCRIPT" />
+            <button onClick={()=> window.open("https://www.w3schools.com/html/", "_blank")}>HTML</button>
+            <button onClick={()=> window.open("https://www.w3schools.com/css/", "_blank")}>CSS</button>
+            <button onClick={()=> window.open("https://www.w3schools.com/js/", "_blank")}>JS</button>
+
         </div>
     )
 }
